@@ -1,0 +1,17 @@
+______Simulation Parameters_______
+R0_IC : False
+core_repeats : 20
+cores_used = 25 
+ensemble_size = 500 
+rho_values : 0.0 - 0.1 | 51 values
+beta_values : 0.0 - 0.02 | 10 values of infectivity
+parameter_pace_dim : (20, 51, 11)
+ell : 25m
+L : [400, 400] (original non-local-model dimension)
+alpha : 5. (Lattice constant)
+T : 100. (Infectious life-time)
+run_time : 3000 
+transient_time : False 
+computer_runtime : 1289.6 (mins)
+Notes : 'Use as a proxy input data-set for PDE model
+	 1) need to improve resolution of rho' 
