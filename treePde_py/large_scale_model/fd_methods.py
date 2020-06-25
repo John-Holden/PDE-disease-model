@@ -5,6 +5,7 @@ do
 import sys
 import numpy as np
 
+
 def do_timestep(u0, u, d, dd, g, dt, dx, dy, dx2, dy2):
     """
     FTCD solver
@@ -39,12 +40,11 @@ def do_timestep(u0, u, d, dd, g, dt, dx, dy, dx2, dy2):
         print('max: ', u.max())
         u[np.where(u > 1)] = 1  # correct for errors ?
 
-
     u0 = u.copy()
     return u0, u
 
 
-def fd_simulate(dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_steps):
+def fd_simulate(domain, dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_steps, animate, freq, save_dir):
     """
     :param model_params: dict of parameters used
     :param FD_settings:  Finite Difference setup
@@ -52,21 +52,36 @@ def fd_simulate(dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_steps):
     :param save_path: output data location
     :return: inf_tseries, the number of infected trees per step
     """
-
+    from treePde_py.plot.epidemic import PltStep
     # ------- Begin Finite Difference Simulations ------- #
     #
-    import matplotlib.pyplot as plt
+    c, c_ = 1, 1
+    if animate:
+        plot = PltStep(bcd, domain, save_dir)  # init plotting function
 
     for t in range(n_steps):
-        # Call FTCD function
+        # Call forward-time-centered-difference method
         u0_uk, u_uk = do_timestep(u0_uk, u_uk, d_map, dd_map , g_map, dt, dx, dy, dx2=dx ** 2, dy2=dy ** 2)
-        u_uk[0], u_uk[-1], u_uk[:, 1], u_uk[:, -1] = [0, 0, 0, 0]  # Enforce boundary conditions
+        u_uk[0], u_uk[-1], u_uk[:, 1], u_uk[:, -1] = [0, 0, 0, 0]  # enforce boundary conditions
         u0_uk[0], u0_uk[-1], u0_uk[:, 1], u0_uk[:, -1] = [0, 0, 0, 0]
-        u_uk[bcd], u0_uk[bcd] = 0, 0
-        if t % 2000 == 0:
-            plt.title('t = {}'.format(t))
-            im = plt.imshow(u_uk)
-            plt.colorbar(im)
-            plt.show()
+        u_uk[bcd], u0_uk[bcd] = 0, 0  # set boundary to zero
+
+        if t == c_ * freq:  # save infectious field evolution
+            np.save(save_dir + '/infectious_field/{}'.format(c_), u_uk)
+            c_ += 1
+
+        # ____________ do mid-sim plots ____________ #
+        if animate:
+            if freq is None:
+                pass
+
+            elif t == c*freq:  # do plot at given freq
+                plot.step(u_uk, c, freq, dt)
+                c += 1
+
+
+
+
+
 
 

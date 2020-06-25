@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.ndimage import gaussian_filter
+from treePde_py.mkdir import setup
 import sys, os
 import matplotlib.pyplot as plt
 
@@ -7,33 +8,42 @@ import matplotlib.pyplot as plt
 class Model:
     def __init__(self,  settings, fd_settings, epi_c=None):
         """
-
         :param settings:
         :param fd_settings:
         :param epi_c:
         """
+
         # Set domain and epidemic conditions
         # ______________________________________________________#
         input_dir = os.getcwd()+'/treePde_py/input_Sgm_data/'
-        name = 'b_{}_ell_{}_com_arr.npy'.format(str(settings["beta"]).replace('.', '_'), str(settings['ell']))
-        self.out_dir = os.getcwd()+'/data-time-series/' + name
+        name = 'fkpp_{}_b_{}_ell_{}'.format(settings["data"],
+                                                str(settings["beta"]).replace('.', '_'), str(settings['ell']))
+
+        self.out_dir = os.getcwd()+'/model_data/' + name
+        setup.mkdir(self.out_dir)  # make directories
+
         self.domain = 0.01 * np.genfromtxt(input_dir+settings["data"]+'.csv', delimiter=',')  # domain density
         if settings["subset"]:  # sub-set data for tests
             self.domain = self.domain[600:850, 300:550]
+
         self.shape = self.domain.shape
         self.sea_bcd = np.where(np.isnan(self.domain), 0, 1)  # sea boundary condition
         self.rho_space = np.load(input_dir+'/rho_values.npy')
         self.beta_space = np.load(input_dir+'/beta_values.npy')
         beta_ind = np.where(self.beta_space == settings["beta"])[0]  # get index of beta
         assert len(beta_ind) > 0  # Beta value not defined...
+        # max_d = np.load(input_dir+'/max_d_arr.npy')
+        # end_t = np.load(input_dir+'/end_t_arr.npy')
+        # velocity = max_d/end_t
         velocity = np.load(input_dir+'/com_arr.npy')  # load ensemble velocity
         percolation = np.load(input_dir+'/perc_arr.npy')  # load ensemble percolation
         self.velocity = velocity[:, beta_ind]  # get beta-rho velocity mapping
         self.velocity = self.velocity * percolation[:, beta_ind]  # negate below percolation threshold
         self.velocity_map = self.get_subGrid_map()  # generate velocity mapping
-        # self.velocity_map = np.ones_like(self.domain)  # todo test simple map
-        self.growth_map = np.ones_like(self.velocity_map) * 1  # todo uniform growth map
-        # Set Finite difference parameters
+        self.v_factor = 10
+        self.d_factor = 5000
+        self.g_factor = 0.25
+        self.growth_map = np.ones_like(self.velocity_map)  # uniform growth map
         # ______________________________________________________#
         self.dx = fd_settings["dx"]
         self.dy = fd_settings["dy"]
@@ -42,9 +52,11 @@ class Model:
         self.u_uk = np.zeros_like(self.domain)
         if epi_c is None:
             epix, epiy = int(self.domain.shape[0]/2), int(self.domain.shape[1]/2)
+            self.u_uk[epiy, epix] = 1.0
+        else:
+            self.u_uk[epi_c[0], epi_c[1]] = 1
 
-        self.u_uk[epiy-1: epiy+1, epix-1: epix + 1] = 1.0
-        self.u_uk = gaussian_filter(self.u_uk, sigma=2)
+        self.u_uk = gaussian_filter(self.u_uk, sigma=1)
         self.u0_uk = np.copy(self.u_uk)
         assert self.dx == self.dy
         return
@@ -52,7 +64,6 @@ class Model:
     def get_subGrid_map(self):
         """
         From sg_mapping function field vs rho, map to spatial domain
-
         """
         spatial_map = np.zeros(self.shape)  # define velocity field over UK
         rho_boundaries = {}
@@ -78,7 +89,7 @@ class Model:
 
         return spatial_map
 
-    def run_fd_solver(self, tend):
+    def run_fd_solver(self, tend, animate=False, freq=None):
         """
         Solve finite difference simulations
         :param fd_settings:
@@ -87,22 +98,23 @@ class Model:
         from treePde_py.large_scale_model.fd_methods import fd_simulate
         # zeros = np.where(self.velocity_map == 0, 0, 1)
         # self.velocity_map = gaussian_filter(self.velocity_map, sigma=0.1)
-
-        self.velocity_map = 1000 * self.velocity_map
+        self.velocity_map = self.v_factor * self.velocity_map  # ~ m /day
         d_map = 0.25 * (self.velocity_map ** 2) / self.growth_map
+        d_map, self.growth_map = [self.d_factor * d_map, self.g_factor * self.growth_map]  # control thickness of the front
         dd_map = ((d_map[2:, 1:-1] - d_map[:-2, 1:-1] + d_map[1:-1, 2:] - d_map[1:-1, :-2]) / (2 * self.dx))
         bcd = np.where(self.sea_bcd == 0)
         n_steps = int(tend / self.dt)
+        freq = int(freq/self.dt)
         cfl = d_map.max() * self.dt / (self.dx ** 2)
         print('cfl ', cfl)
+        print('max v', self.velocity_map.max())
         if cfl <= 0.500:  # Check CFL for stability
             pass
         else:
             raise RuntimeError("Error: CFL is not satisfied.")
-
         print('nsteps ', n_steps)
 
-        if 1:
+        if 0:
             plt.title(' d map ')
             im = plt.imshow(d_map)
             plt.colorbar(im)
@@ -113,6 +125,8 @@ class Model:
             plt.colorbar(im)
             plt.show()
 
-        fd_simulate(dx=self.dx, dy=self.dy, dt=self.dt, d_map=d_map, dd_map=dd_map, g_map=self.growth_map,
-                    u0_uk=self.u0_uk, u_uk=self.u_uk, n_steps=n_steps, bcd=bcd)
+        fd_simulate(domain=self.domain,d_map=d_map, dd_map=dd_map, g_map=self.growth_map,
+                    u0_uk=self.u0_uk, u_uk=self.u_uk,
+                    dx=self.dx, dy=self.dy, dt=self.dt,
+                    n_steps=n_steps, bcd=bcd, animate=animate, freq=freq, save_dir=self.out_dir)
 
