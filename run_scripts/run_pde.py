@@ -21,7 +21,7 @@ def run_sim(date, job):
     fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1}  # set finite difference solver
     model = fkpp.Model(domain_settings, fd_settings, epi_c=[700, 550])
     animate = False
-    freq = 50
+    freq = 30
     tend = 2000
     start = timer()
     # ---- start simulation ---- #
