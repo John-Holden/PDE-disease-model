@@ -14,4 +14,4 @@ module load python-libs/3.1.0
 #$ -l h_rt=48:00:00
 #$ -t 1-1
 
-python3 run_pde_HPC.py $SGE_TASK_ID
+python3 run_pde_hpc.py $SGE_TASK_ID
