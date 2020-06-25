@@ -10,8 +10,8 @@ model = fkpp.Model(domain_settings, fd_settings)
 bcds = np.where(model.sea_bcd == 0)
 plots = PltStep(bcd=bcds, domain=model.domain, save=os.getcwd())
 
-sim_name = "/fkpp_Fex_b_0_02_ell_25_hpc_test"
-frame = 9
+sim_name = "/fkpp_Fex_b_0_02_ell_25_high_d_low_g"
+frame = 30
 u_uk = np.load(os.getcwd() + '/model_data' + sim_name+'/infectious_field/{}.npy'.format(frame))
 
 plots.step(u_uk, c=frame, title=False, sim_plt=False)

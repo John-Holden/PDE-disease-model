@@ -41,8 +41,8 @@ class Model:
         self.velocity = self.velocity * percolation[:, beta_ind]  # negate below percolation threshold
         self.velocity_map = self.get_subGrid_map()  # generate velocity mapping
         self.v_factor = 10
-        self.d_factor = 5000
-        self.g_factor = 0.25
+        self.d_factor = 500
+        self.g_factor = 0.50
         self.growth_map = np.ones_like(self.velocity_map)  # uniform growth map
         # ______________________________________________________#
         self.dx = fd_settings["dx"]
