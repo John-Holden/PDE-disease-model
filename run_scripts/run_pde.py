@@ -11,11 +11,8 @@ from treePde_py.mkdir.setup import save_info
 # 3) CFL_max : condition for numerical stability
 
 
-
-
 def run_sim(date, job):
     """
-
     :param date:
     :param job:
     :return:
@@ -23,9 +20,9 @@ def run_sim(date, job):
     domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
     fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1}  # set finite difference solver
     model = fkpp.Model(domain_settings, fd_settings, epi_c=[700, 550])
-    animate = True
-    freq = 10
-    tend = 100
+    animate = False
+    freq = 50
+    tend = 2000
     start = timer()
     # ---- start simulation ---- #
     print("Simulation Start @ time {}  @".format(datetime.datetime.now()))
