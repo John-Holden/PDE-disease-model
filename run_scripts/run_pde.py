@@ -21,9 +21,9 @@ def run_sim(date, job):
     :return:
     """
     domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
-    fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.01}  # set finite difference solver
+    fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1}  # set finite difference solver
     model = fkpp.Model(domain_settings, fd_settings, epi_c=[700, 550])
-    animate = False
+    animate = True
     freq = 10
     tend = 100
     start = timer()

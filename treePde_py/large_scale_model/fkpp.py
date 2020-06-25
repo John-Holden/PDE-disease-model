@@ -106,12 +106,13 @@ class Model:
         n_steps = int(tend / self.dt)
         freq = int(freq/self.dt)
         cfl = d_map.max() * self.dt / (self.dx ** 2)
-        print('cfl ', cfl)
-        print('max v', self.velocity_map.max())
         if cfl <= 0.500:  # Check CFL for stability
             pass
         else:
+            print('cfl ', cfl)
             raise RuntimeError("Error: CFL is not satisfied.")
+        print('cfl ', cfl)
+        print('max v', self.velocity_map.max())
         print('nsteps ', n_steps)
 
         if 0:
