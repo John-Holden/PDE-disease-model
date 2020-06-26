@@ -59,6 +59,7 @@ def fd_simulate(domain, dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_st
     if animate:
         plot = PltStep(bcd, domain, d_map, save_dir)  # init plotting function
 
+
     for fd_step in range(n_steps):
         # Call forward-time-centered-difference method
         u0_uk, u_uk = do_timestep(u0_uk, u_uk, d_map, dd_map , g_map, dt, dx, dy, dx2=dx ** 2, dy2=dy ** 2)

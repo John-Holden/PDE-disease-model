@@ -6,20 +6,33 @@ import numpy as np
 import os, sys
 os.chdir('..')
 
-domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
-fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1}  # set finite difference solver
-model = fkpp.Model(domain_settings, fd_settings)
 
-# sim_name = "/fkpp_Fex_b_0_02_ell_25_low_g_hi_d"
-sim_name = "/fkpp_Fex_b_0_02_ell_25"
+sim_name = "/fkpp_Fex_b_0_02_ell_25_naieve"
+sim_name = "/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500"
 # load fd settings
 
 with open(os.getcwd() + '/model_data/'+sim_name+'/info/ensemble_info.txt', mode='r') as file:
     for line in file:
         if line.split()[0] == "dt":
             dt = float(line.split()[-1])
+        if line.split()[0] == "dx":
+            dx = float(line.split()[-1])
+        if line.split()[0] == "dy":
+            dy = float(line.split()[-1])
+        if line.split()[0] == "v_factor":
+            v_fact = float(line.split()[-1])
+        if line.split()[0] == "g_factor":
+            g_fact = float(line.split()[-1])
+        if line.split()[0] == "d_factor":
+            d_fact = float(line.split()[-1])
         if line.split()[0] == "freq":
             freq = float(line.split()[-1])
+
+domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
+fd_settings = {"dx": 1000, "dy": 1000, "dt": dt, "g_factor":
+    g_fact, "d_factor": d_fact, "v_factor": v_fact}  # set finite difference solver
+model = fkpp.Model(domain_settings, fd_settings)
+
 try:  # make animations folder to save in
     os.mkdir(os.getcwd() + '/model_data' + sim_name + '/animations')
 except FileExistsError:

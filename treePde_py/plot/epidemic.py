@@ -49,8 +49,8 @@ class PltStep:
         """
 
         self.domain[np.where(u_uk > 0.001)] = 0  # take away infection from domain
-        # fig, ax = plt.subplots(figsize=(5, 6))
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(5, 6))
+        # fig, ax = plt.subplots()
         # im = ax.pcolormesh(((u_uk/u_uk.max()) - self.domain) + self.sea, cmap=self.cmap)
         # im = ax.pcolor(((u_uk/u_uk.max()) - self.domain) + self.sea, cmap=self.cmap)
         # plt.gca().invert_yaxis()

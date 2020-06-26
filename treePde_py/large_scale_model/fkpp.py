@@ -49,12 +49,14 @@ class Model:
         self.dt = fd_settings["dt"]
         # u_uk & u0_uk : field values of pde
         self.u_uk = np.zeros_like(self.domain)
+
         if epi_c is None:
             epix, epiy = int(self.domain.shape[0]/2), int(self.domain.shape[1]/2)
-            self.u_uk[epiy, epix] = 1.0
         else:
-            self.u_uk[epi_c[0], epi_c[1]] = 1
+            epix, epiy = [epi_c[0], epi_c[1]]
 
+        self.u_uk[epix, epiy] = 1
+        self.epi_c = [epiy, epix]
         self.u_uk = gaussian_filter(self.u_uk, sigma=1)
         self.u0_uk = np.copy(self.u_uk)
         setup.mkdir(self.out_dir)  # make directories
@@ -117,8 +119,8 @@ class Model:
         print('{} finite difference steps... '.format(n_steps))
 
         if 0:
-            plt.title(' d map ')
-            im = plt.imshow(d_map)
+            plt.title(' u ')
+            im = plt.imshow(self.u_uk)
             plt.colorbar(im)
             plt.show()
 
@@ -126,6 +128,7 @@ class Model:
             im = plt.imshow(dd_map)
             plt.colorbar(im)
             plt.show()
+            sys.exit()
 
         fd_simulate(domain=self.domain,d_map=d_map, dd_map=dd_map, g_map=self.growth_map,
                     u0_uk=self.u0_uk, u_uk=self.u_uk,
