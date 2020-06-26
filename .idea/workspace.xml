@@ -4,28 +4,128 @@
     <list default="true" id="65317fdf-8d34-4da8-bc62-82f22cf7977a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_data/animate.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/animate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/1.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/10.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/2.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/3.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/4.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/5.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/6.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/7.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/8.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/infectious_field/9.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_g_0_5_d_500/info/ensemble_info.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/1.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/10.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/2.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/3.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/4.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/5.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/6.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/7.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/8.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/9.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/info/ensemble_info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/1.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/1.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/10.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/10.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/100.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/100.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/101.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/101.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/102.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/102.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/103.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/103.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/104.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/104.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/105.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/105.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/106.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/106.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/107.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/107.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/108.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/108.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/109.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/109.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/11.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/11.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/110.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/110.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/111.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/111.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/112.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/112.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/113.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/113.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/114.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/114.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/115.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/115.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/116.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/116.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/117.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/117.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/118.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/118.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/119.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/119.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/12.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/12.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/120.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/120.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/121.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/121.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/13.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/13.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/14.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/14.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/15.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/15.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/16.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/16.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/17.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/17.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/18.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/18.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/19.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/19.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/2.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/2.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/20.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/20.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/21.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/21.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/22.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/22.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/23.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/23.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/24.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/24.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/25.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/25.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/26.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/26.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/27.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/27.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/28.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/28.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/29.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/29.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/3.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/3.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/30.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/30.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/31.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/31.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/32.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/32.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/33.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/33.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/34.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/34.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/35.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/35.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/36.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/36.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/37.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/37.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/38.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/38.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/39.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/39.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/4.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/4.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/40.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/40.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/41.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/41.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/42.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/42.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/43.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/43.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/44.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/44.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/45.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/45.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/46.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/46.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/47.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/47.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/48.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/48.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/49.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/49.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/5.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/5.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/50.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/50.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/51.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/51.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/52.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/52.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/53.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/53.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/54.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/54.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/55.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/55.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/56.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/56.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/57.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/57.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/58.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/58.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/59.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/59.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/6.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/6.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/60.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/60.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/61.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/61.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/62.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/62.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/63.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/63.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/64.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/64.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/65.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/65.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/66.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/66.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/67.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/67.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/68.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/68.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/69.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/69.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/7.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/7.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/70.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/70.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/71.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/71.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/72.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/72.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/73.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/73.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/74.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/74.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/75.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/75.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/76.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/76.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/77.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/77.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/78.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/78.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/79.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/79.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/8.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/8.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/80.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/80.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/81.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/81.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/82.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/82.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/83.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/83.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/84.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/84.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/85.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/85.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/86.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/86.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/87.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/87.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/88.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/88.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/89.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/89.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/9.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/9.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/90.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/90.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/91.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/91.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/92.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/92.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/93.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/93.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/94.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/94.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/95.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/95.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/96.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/96.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/97.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/97.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/98.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/98.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/infectious_field/99.npy" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/infectious_field/99.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/info/ensemble_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/info/ensemble_info.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_scripts/run_pde.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_scripts/run_pde.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treePde_py/large_scale_model/fd_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/treePde_py/large_scale_model/fd_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treePde_py/large_scale_model/fkpp.py" beforeDir="false" afterPath="$PROJECT_DIR$/treePde_py/large_scale_model/fkpp.py" afterDir="false" />
@@ -39,8 +139,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pde_tree_epidemics$run_simulation.coverage" NAME="run_simulation Coverage Results" MODIFIED="1593007118186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../nonlocal-tree-epidemics/run_scripts" />
-    <SUITE FILE_PATH="coverage/pde_tree_epidemics$animate.coverage" NAME="animate Coverage Results" MODIFIED="1593187882380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model_data" />
-    <SUITE FILE_PATH="coverage/pde_tree_epidemics$run_pde.coverage" NAME="run_pde Coverage Results" MODIFIED="1593188910440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_scripts" />
+    <SUITE FILE_PATH="coverage/pde_tree_epidemics$animate.coverage" NAME="animate Coverage Results" MODIFIED="1593195071532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model_data" />
+    <SUITE FILE_PATH="coverage/pde_tree_epidemics$run_pde.coverage" NAME="run_pde Coverage Results" MODIFIED="1593194483712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_scripts" />
     <SUITE FILE_PATH="coverage/pde_tree_epidemics$do_plots.coverage" NAME="do_plots Coverage Results" MODIFIED="1593173981279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -59,23 +159,23 @@
         <counts>
           <entry key="npy" value="1" />
           <entry key="png" value="3" />
-          <entry key="py" value="47" />
+          <entry key="py" value="52" />
           <entry key="sh" value="5" />
-          <entry key="txt" value="18" />
+          <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="5" />
           <entry key="Image" value="3" />
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="47" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="37" />
-          <entry key="py" value="13806" />
+          <entry key="py" value="14608" />
           <entry key="sh" value="344" />
           <entry key="txt" value="92" />
         </counts>
@@ -84,18 +184,18 @@
         <counts>
           <entry key="Bash" value="344" />
           <entry key="PLAIN_TEXT" value="129" />
-          <entry key="Python" value="13806" />
+          <entry key="Python" value="14608" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_scripts/run_pde.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -106,11 +206,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treePde_py/large_scale_model/fkpp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="372">
+              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1593188873387" expanded="true" signature="157:162" ph="..." />
+                <marker date="1593194714000" expanded="true" signature="157:162" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model_data/animate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+              <folding>
+                <element signature="e#1#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,10 +231,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/treePde_py/large_scale_model/fd_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="739">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#69#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/treePde_py/plot/epidemic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <marker date="1593194944507" expanded="true" signature="118:1301" ph="..." />
+                <marker date="1593194944507" expanded="true" signature="2532:2541" ph="..." />
               </folding>
             </state>
           </provider>
@@ -169,11 +295,11 @@
         <option value="$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_high_d_low_g/info/ensemble_info.txt" />
         <option value="$PROJECT_DIR$/do_plots.py" />
         <option value="$PROJECT_DIR$/model_data/animate.sh" />
-        <option value="$PROJECT_DIR$/model_data/animate.py" />
-        <option value="$PROJECT_DIR$/treePde_py/plot/epidemic.py" />
-        <option value="$PROJECT_DIR$/treePde_py/large_scale_model/fkpp.py" />
         <option value="$PROJECT_DIR$/treePde_py/large_scale_model/fd_methods.py" />
         <option value="$PROJECT_DIR$/run_scripts/run_pde.py" />
+        <option value="$PROJECT_DIR$/treePde_py/large_scale_model/fkpp.py" />
+        <option value="$PROJECT_DIR$/treePde_py/plot/epidemic.py" />
+        <option value="$PROJECT_DIR$/model_data/animate.py" />
       </list>
     </option>
   </component>
@@ -210,14 +336,7 @@
               <item name="pde_tree_epidemics" type="b2602c69:ProjectViewProjectNode" />
               <item name="pde_tree_epidemics" type="462c0819:PsiDirectoryNode" />
               <item name="model_data" type="462c0819:PsiDirectoryNode" />
-              <item name="fkpp_Fex_b_0_02_ell_25" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pde_tree_epidemics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pde_tree_epidemics" type="462c0819:PsiDirectoryNode" />
-              <item name="model_data" type="462c0819:PsiDirectoryNode" />
-              <item name="fkpp_Fex_b_0_02_ell_25" type="462c0819:PsiDirectoryNode" />
-              <item name="info" type="462c0819:PsiDirectoryNode" />
+              <item name="fkpp_Fex_b_0_02_ell_25_naieve" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,7 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_pde">
+  <component name="RunManager" selected="Python.animate">
     <configuration name="animate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pde_tree_epidemics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,8 +445,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_pde" />
         <item itemvalue="Python.animate" />
+        <item itemvalue="Python.run_pde" />
         <item itemvalue="Python.run_simulation" />
       </list>
     </recent_temporary>
@@ -347,14 +466,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19329074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871288" />
-      <window_info anchor="bottom" x="-1080" y="-1057" width="1092" height="1897" id="Run" order="2" type="FLOATING" visible="true" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" x="-1080" y="-1057" width="1092" height="1897" id="Run" order="2" type="FLOATING" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -368,7 +486,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" x="1095" y="23" width="585" height="1027" id="SciView" order="3" visible="true" weight="0.3109691" />
+      <window_info anchor="right" x="1095" y="23" width="585" height="1027" id="SciView" order="3" visible="true" weight="0.3109691" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -550,62 +668,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25/info/ensemble_info.txt">
+    <entry file="file://$PROJECT_DIR$/model_data/fkpp_Fex_b_0_02_ell_25_naieve/info/ensemble_info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treePde_py/plot/epidemic.py">
+    <entry file="file://$PROJECT_DIR$/run_scripts/run_pde.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        <state relative-caret-position="375">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <marker date="1593187882368" expanded="true" signature="118:1301" ph="..." />
-            <marker date="1593187882368" expanded="true" signature="2533:2542" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model_data/animate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="e#1#45#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/treePde_py/large_scale_model/fkpp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="372">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1593188873387" expanded="true" signature="157:162" ph="..." />
+            <marker date="1593194714000" expanded="true" signature="157:162" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treePde_py/plot/epidemic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1593194944507" expanded="true" signature="118:1301" ph="..." />
+            <marker date="1593194944507" expanded="true" signature="2532:2541" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/treePde_py/large_scale_model/fd_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="739">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#69#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_scripts/run_pde.py">
+    <entry file="file://$PROJECT_DIR$/model_data/animate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="675">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

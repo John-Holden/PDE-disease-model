@@ -42,8 +42,27 @@ class Model:
         self.v_factor = fd_settings["v_factor"]
         self.d_factor = fd_settings["d_factor"]
         self.g_factor = fd_settings["g_factor"]
-        self.growth_map = np.ones_like(self.velocity_map)  # uniform growth map
+        self.growth_map = np.ones_like(self.velocity_map) * 1  # uniform growth map
+
+        self.velocity_map[:, 125] = 5
+
+        """
+        # todo test variable growth...
         # ______________________________________________________#
+        for i in range(self.growth_map.shape[1]):
+            self.growth_map[:, i] += 2 - i * 0.01
+        # self.growth_map[:125] = 3
+        self.growth_map = gaussian_filter(self.growth_map, sigma=10)
+
+        import matplotlib.pyplot as plt
+
+        im = plt.imshow(self.growth_map * np.logical_not(np.isnan(self.domain)))
+        plt.colorbar(im)
+        plt.show()
+        print(self.growth_map.min())
+        """
+        # ______________________________________________________#
+
         self.dx = fd_settings["dx"]
         self.dy = fd_settings["dy"]
         self.dt = fd_settings["dt"]

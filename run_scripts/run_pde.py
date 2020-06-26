@@ -19,14 +19,16 @@ def run_sim(date, job):
     :param job:
     :return:
     """
-    domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
-    fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1,
-                   "v_factor": 1, "d_factor": 1, "g_factor": 1}  # set fd solver
+    domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": True,
+                       "growth": "latitude"}  # set domain and epidemic
 
-    model = fkpp.Model(domain_settings, fd_settings, epi_c=[700, 400])
-    animate = False
-    freq = 30
-    tend = 10*365 + 1
+    fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1,
+                   "v_factor": 1, "d_factor": 100, "g_factor": 0.25}  # set fd solver
+
+    model = fkpp.Model(domain_settings, fd_settings)  # , epi_c=[700, 400]
+    animate = True
+    freq = 250
+    tend = 1251
     start = timer()
     # ---- start simulation ---- #
     print("Simulation Start @ time {}  @".format(datetime.datetime.now()))

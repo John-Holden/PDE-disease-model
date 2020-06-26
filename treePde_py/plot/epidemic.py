@@ -47,7 +47,6 @@ class PltStep:
         :param c:
         :return:
         """
-
         self.domain[np.where(u_uk > 0.001)] = 0  # take away infection from domain
         fig, ax = plt.subplots(figsize=(5, 6))
         # fig, ax = plt.subplots()
