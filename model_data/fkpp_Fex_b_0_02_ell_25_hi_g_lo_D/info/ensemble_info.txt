@@ -1,0 +1,16 @@
+______Simulation Parameters_______
+data : Fex
+beta : 0.02
+ell : 25
+subset : False
+dx : 1000
+dy : 1000
+dt : 0.1
+velocity_multipler : 10
+diffusion_multiplier : 500
+growth_multiplier : 0.5
+tend : 3000
+animate : False
+freq : 30
+physical run time : 26.24 (minutes) 
+Notes : '...' 
