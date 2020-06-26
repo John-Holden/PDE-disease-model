@@ -57,16 +57,16 @@ def fd_simulate(domain, dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_st
     #
     c, c_ = 1, 1
     if animate:
-        plot = PltStep(bcd, domain, save_dir)  # init plotting function
+        plot = PltStep(bcd, domain, d_map, save_dir)  # init plotting function
 
-    for t in range(n_steps):
+    for fd_step in range(n_steps):
         # Call forward-time-centered-difference method
         u0_uk, u_uk = do_timestep(u0_uk, u_uk, d_map, dd_map , g_map, dt, dx, dy, dx2=dx ** 2, dy2=dy ** 2)
         u_uk[0], u_uk[-1], u_uk[:, 1], u_uk[:, -1] = [0, 0, 0, 0]  # enforce boundary conditions
         u0_uk[0], u0_uk[-1], u0_uk[:, 1], u0_uk[:, -1] = [0, 0, 0, 0]
         u_uk[bcd], u0_uk[bcd] = 0, 0  # set boundary to zero
 
-        if t == c_ * freq:  # save infectious field evolution
+        if fd_step == c_ * freq:  # save infectious field evolution
             np.save(save_dir + '/infectious_field/{}'.format(c_), u_uk)
             c_ += 1
 
@@ -75,8 +75,10 @@ def fd_simulate(domain, dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_st
             if freq is None:
                 pass
 
-            elif t == c*freq:  # do plot at given freq
-                plot.step(u_uk, c=c, freq=freq, dt=dt)
+            elif fd_step == c*freq:  # do plot at given freq
+                print('t step = ', fd_step*dt)
+                print('fd step = ', fd_step)
+                plot.step(u_uk, c=c, title=(fd_step*dt))
                 c += 1
 
 

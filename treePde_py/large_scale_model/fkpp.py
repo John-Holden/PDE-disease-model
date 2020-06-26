@@ -20,8 +20,6 @@ class Model:
                                                 str(settings["beta"]).replace('.', '_'), str(settings['ell']))
 
         self.out_dir = os.getcwd()+'/model_data/' + name
-        setup.mkdir(self.out_dir)  # make directories
-
         self.domain = 0.01 * np.genfromtxt(input_dir+settings["data"]+'.csv', delimiter=',')  # domain density
         if settings["subset"]:  # sub-set data for tests
             self.domain = self.domain[600:850, 300:550]
@@ -40,9 +38,10 @@ class Model:
         self.velocity = velocity[:, beta_ind]  # get beta-rho velocity mapping
         self.velocity = self.velocity * percolation[:, beta_ind]  # negate below percolation threshold
         self.velocity_map = self.get_subGrid_map()  # generate velocity mapping
-        self.v_factor = 10
-        self.d_factor = 500
-        self.g_factor = 0.50
+        # self.velocity_map = gaussian_filter(self.velocity_map, sigma=0.3)
+        self.v_factor = fd_settings["v_factor"]
+        self.d_factor = fd_settings["d_factor"]
+        self.g_factor = fd_settings["g_factor"]
         self.growth_map = np.ones_like(self.velocity_map)  # uniform growth map
         # ______________________________________________________#
         self.dx = fd_settings["dx"]
@@ -58,6 +57,7 @@ class Model:
 
         self.u_uk = gaussian_filter(self.u_uk, sigma=1)
         self.u0_uk = np.copy(self.u_uk)
+        setup.mkdir(self.out_dir)  # make directories
         assert self.dx == self.dy
         return
 
@@ -111,9 +111,10 @@ class Model:
         else:
             print('cfl ', cfl)
             raise RuntimeError("Error: CFL is not satisfied.")
+
         print('cfl ', cfl)
-        print('max v', self.velocity_map.max())
-        print('nsteps ', n_steps)
+        print('max v ', self.velocity_map.max())
+        print('{} finite difference steps... '.format(n_steps))
 
         if 0:
             plt.title(' d map ')

@@ -8,7 +8,7 @@ from treePde_py.mkdir.setup import save_info
 # ---- finite difference parameters ---- #
 # 1) tend : time-steps arb units
 # 2) dx, dy : discrete spatial parameters in units (m)
-# 3) CFL_max : condition for numerical stability
+# 3) v, d, g_factors : change the ratio of diffusion to growth
 
 
 def run_sim(date, job):
@@ -18,11 +18,13 @@ def run_sim(date, job):
     :return:
     """
     domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
-    fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1}  # set finite difference solver
-    model = fkpp.Model(domain_settings, fd_settings, epi_c=[700, 550])  #
+    fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1,
+                   "v_factor": 1, "d_factor": 1, "g_factor": 1}  # set fd solver
+
+    model = fkpp.Model(domain_settings, fd_settings, epi_c=[700, 550])  # , epi_c=[700, 550]
     animate = False
-    freq = 30
-    tend = 3000
+    freq = 365
+    tend = 10*365 + 1
     start = timer()
     # ---- start simulation ---- #
     print("Simulation Start @ time {}  @".format(datetime.datetime.now()))
@@ -31,8 +33,7 @@ def run_sim(date, job):
     # ---- end simulation ---- #
     save_info(output_path=model.out_dir, run_time=((timer() - start) / 60),
               domain_settings=domain_settings, fd_settings=fd_settings,
-              velocity_multipler=model.v_factor, diffusion_multiplier=model.d_factor,
-              growth_multiplier=model.g_factor, tend=tend, animate=animate, freq=freq)
+              tend=tend, animate=animate, freq=freq)
     return
 
 
