@@ -78,7 +78,8 @@ def fd_simulate(domain, dx, dy, dt, d_map, dd_map, bcd, g_map, u0_uk, u_uk, n_st
             elif fd_step == c*freq:  # do plot at given freq
                 print('t step = ', fd_step*dt)
                 print('fd step = ', fd_step)
-                plot.step(u_uk, c=c, title=(fd_step*dt))
+                # plot.step(u_uk, c=c, title=(fd_step*dt))
+                plot.step(u_uk, c=c)
                 c += 1
 
 

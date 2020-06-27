@@ -22,8 +22,7 @@ class Model:
         self.out_dir = os.getcwd()+'/model_data/' + name
         self.domain = 0.01 * np.genfromtxt(input_dir+settings["data"]+'.csv', delimiter=',')  # domain density
         if settings["subset"]:  # sub-set data for tests
-            self.domain = self.domain[600:850, 300:550]
-
+            self.domain = self.domain[630:880, 300:550]
         self.shape = self.domain.shape
         self.sea_bcd = np.where(np.isnan(self.domain), 0, 1)  # sea boundary condition
         self.rho_space = np.load(input_dir+'/rho_values.npy')
@@ -42,27 +41,12 @@ class Model:
         self.v_factor = fd_settings["v_factor"]
         self.d_factor = fd_settings["d_factor"]
         self.g_factor = fd_settings["g_factor"]
-        self.growth_map = np.ones_like(self.velocity_map) * 1  # uniform growth map
-
-        self.velocity_map[:, 125] = 5
-
-        """
-        # todo test variable growth...
+        self.growth_map = np.ones_like(self.velocity_map)  # uniform growth map
+        # ______________________________________________________#  todo variable growth...
+        for i in range(self.growth_map.shape[0]):
+            self.growth_map[i, :375] = np.linspace(0.40, 0.10, 375)
+            self.growth_map[i, 375:] = 0.10
         # ______________________________________________________#
-        for i in range(self.growth_map.shape[1]):
-            self.growth_map[:, i] += 2 - i * 0.01
-        # self.growth_map[:125] = 3
-        self.growth_map = gaussian_filter(self.growth_map, sigma=10)
-
-        import matplotlib.pyplot as plt
-
-        im = plt.imshow(self.growth_map * np.logical_not(np.isnan(self.domain)))
-        plt.colorbar(im)
-        plt.show()
-        print(self.growth_map.min())
-        """
-        # ______________________________________________________#
-
         self.dx = fd_settings["dx"]
         self.dy = fd_settings["dy"]
         self.dt = fd_settings["dt"]

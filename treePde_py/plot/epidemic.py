@@ -6,12 +6,15 @@ import matplotlib.colors as mcolors
 
 class PltStep:
     def __init__(self, bcd, domain, vmap, save=None):
-        colors1 = plt.cm.Greens_r(np.linspace(0., 1, 128))  # +ve trees/map
-        colors2 = plt.cm.Reds(np.linspace(0, 1, 128))  # -nve infection
+
+        colors1 = plt.cm.Greens_r(np.linspace(0., 1, 129))  # +ve trees/map as green
+        colors1[0] = [0.1, 0.5, 0.8, 1]
+        colors2 = plt.cm.YlOrRd(np.linspace(0, 1, 128))  # -nve infection
         colors = np.vstack((colors1, colors2))
-        self.cmap = mcolors.LinearSegmentedColormap.from_list('my_colormap', colors)
+        self.cmap = mcolors.ListedColormap(colors)
+        self.cmap.set_under(colors1[0])
         sea = np.zeros_like(domain)
-        sea[bcd] = np.nan
+        sea[bcd] = -1.01
         self.domain = np.copy(domain)
         self.domain[bcd] = 0
         self.domain[np.where(self.domain > 0.1)] = 0.1
@@ -48,7 +51,7 @@ class PltStep:
         :return:
         """
         self.domain[np.where(u_uk > 0.001)] = 0  # take away infection from domain
-        fig, ax = plt.subplots(figsize=(5, 6))
+        fig, ax = plt.subplots(figsize=(4, 6))
         # fig, ax = plt.subplots()
         # im = ax.pcolormesh(((u_uk/u_uk.max()) - self.domain) + self.sea, cmap=self.cmap)
         # im = ax.pcolor(((u_uk/u_uk.max()) - self.domain) + self.sea, cmap=self.cmap)
@@ -60,8 +63,11 @@ class PltStep:
         else:
             ax.set_title('t = {}'.format(title))
 
-        plt.colorbar(im)
+        # plt.colorbar(im, extend='min')
         ax.set_aspect("auto")
+        # ax.set_xticks([])
+        ax.set_yticks([])
+        plt.tight_layout()
         if sim_plt:
             plt.savefig(self.save_dir + '/time_series/{}.pdf'.format(self.labeler(c)))
         else:
@@ -73,5 +79,6 @@ class PltStep:
             plt.show()
         elif not show:
             plt.close()
+
         return
 

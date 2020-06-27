@@ -7,7 +7,7 @@ import os, sys
 os.chdir('..')
 
 
-sim_name = "/fkpp_Fex_b_0_02_ell_25_naieve"
+sim_name = "/fkpp_Fex_b_0_02_ell_25_L"
 
 # load fd settings
 
@@ -43,11 +43,12 @@ plots = PltStep(bcd=np.where(model.sea_bcd == 0), domain=model.domain, vmap=mode
                 save=os.getcwd() + '/model_data' + sim_name + '/animations')
 
 # frames = [31, 33]
-frames = range(1, 132, 12)
+frames = range(1, 121, 1)
 for i, frame in enumerate(frames):
     print('i = {} : T step = {}'.format(i, frame * freq))
     u_uk = np.load(os.getcwd() + '/model_data' + sim_name + '/infectious_field/{}.npy'.format(frame))
-    plots.step(u_uk, c=i, title=frame*freq, sim_plt=False, show=True, ext='.pdf')
+    plots.step(u_uk, c=i, title=frame*freq, sim_plt=False, show=False, ext='.png')
+
 #
 
 
