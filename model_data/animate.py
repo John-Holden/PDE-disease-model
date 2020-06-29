@@ -7,7 +7,7 @@ import os, sys
 os.chdir('..')
 
 
-sim_name = "/fkpp_Fex_b_0_02_ell_25_L"
+sim_name = "/fkpp_Fex_b_0_02_ell_25"
 
 # load fd settings
 

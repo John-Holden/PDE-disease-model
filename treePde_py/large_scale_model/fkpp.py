@@ -16,9 +16,8 @@ class Model:
         # Set domain and epidemic conditions
         # ______________________________________________________#
         input_dir = os.getcwd()+'/treePde_py/input_Sgm_data/'
-        name = 'fkpp_{}_b_{}_ell_{}'.format(settings["data"],
-                                                str(settings["beta"]).replace('.', '_'), str(settings['ell']))
-
+        name = 'fkpp_{}_b_{}_ell_{}'.format(settings["data"], str(settings["beta"]).replace('.', '_'),
+                                            str(settings['ell']))
         self.out_dir = os.getcwd()+'/model_data/' + name
         self.domain = 0.01 * np.genfromtxt(input_dir+settings["data"]+'.csv', delimiter=',')  # domain density
         if settings["subset"]:  # sub-set data for tests
@@ -32,8 +31,8 @@ class Model:
         # max_d = np.load(input_dir+'/max_d_arr.npy')
         # end_t = np.load(input_dir+'/end_t_arr.npy')
         # velocity = max_d/end_t
-        velocity = np.load(input_dir+'/com_arr.npy')  # load ensemble velocity
-        percolation = np.load(input_dir+'/perc_arr.npy')  # load ensemble percolation
+        velocity = np.load(input_dir+'/com_arr.npy')  # load sg ensemble velocity
+        percolation = np.load(input_dir+'/perc_arr.npy')  # load sg ensemble percolation
         self.velocity = velocity[:, beta_ind]  # get beta-rho velocity mapping
         self.velocity = self.velocity * percolation[:, beta_ind]  # negate below percolation threshold
         self.velocity_map = self.get_subGrid_map()  # generate velocity mapping
@@ -44,7 +43,7 @@ class Model:
         self.growth_map = np.ones_like(self.velocity_map)  # uniform growth map
         # ______________________________________________________#  todo variable growth...
         for i in range(self.growth_map.shape[0]):
-            self.growth_map[i, :375] = np.linspace(0.40, 0.10, 375)
+            self.growth_map[i, :375] = np.linspace(0.75, 0.10, 375)
             self.growth_map[i, 375:] = 0.10
         # ______________________________________________________#
         self.dx = fd_settings["dx"]
@@ -91,7 +90,6 @@ class Model:
                         # - cap at highest given rho space boundary mapping
                         elif d_ij > max_density:  # if density above max density, cap to max value
                             spatial_map[i, j] = self.velocity[len(rho_boundaries) - 1]
-
         return spatial_map
 
     def run_fd_solver(self, tend, animate=False, freq=None):

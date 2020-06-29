@@ -8,9 +8,10 @@ from treePde_py.mkdir.setup import save_info
 
 
 # ---- finite difference parameters ---- #
-# 1) tend : time-steps arb units
+# 1) tend : time-steps arb units ~ day
 # 2) dx, dy : discrete spatial parameters in units (m)
 # 3) v, d, g_factors : change the ratio of diffusion to growth
+# 3) epi_c : epicenter
 
 
 def run_sim(date, job):
@@ -19,8 +20,7 @@ def run_sim(date, job):
     :param job:
     :return:
     """
-    domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False,
-                       "growth": "latitude"}  # set domain and epidemic
+    domain_settings = {"data": "Fex", "beta": 0.020, "ell": 25, "subset": False}  # set domain and epidemic
 
     fd_settings = {"dx": 1000, "dy": 1000, "dt": 0.1,
                    "v_factor": 100, "d_factor": 1, "g_factor": 1}  # set fd solver
